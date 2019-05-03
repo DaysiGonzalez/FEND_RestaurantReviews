@@ -104,7 +104,8 @@ nav h1 a {
 }
 
 /* Add a color on mouse-over */
-#breadcrumb li a:hover {
+#breadcrumb li a:hover,
+#breadcrumb li a:focus{
     color: #01447e;
     text-decoration: underline;
 }
@@ -286,6 +287,12 @@ nav h1 a {
 	width: 100%;
 	align-items:center;
 }
+
+#reviews-list li:hover,
+#reviews-list li:focus {
+	border: 2px solid coral;
+}
+
 #reviews-list li {
   background-color: #fff;
 	border: 2px solid #f3f3f3;
@@ -302,4 +309,17 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* Accesibility skip link */
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -1000px;
+    background-color: white;
+    padding: 5px 10px;
+}
+.skip-link:focus {
+    left: 15px;
 }
