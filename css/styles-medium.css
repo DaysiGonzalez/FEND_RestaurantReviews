@@ -1,0 +1,45 @@
+
+@media screen and (min-width: 900px) {
+  #restaurant-img {
+  	width: 60%;
+    align-items: center;
+  }
+
+  #maincontent {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: repeat(2, 1fr);
+  }
+
+  #maincontentindex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  #restaurants-list .restaurant-img {
+    min-height: 240px;
+    /* display: flex; */
+  }
+
+  #restaurant-container {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+
+  #reviews-container{
+    grid-column: 1 /span 2;
+    grid-row: 2 / 2;
+  }
+
+  .inside #map-container{
+    grid-column: 2;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
